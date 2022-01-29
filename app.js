@@ -10,7 +10,7 @@ const app = express();
 
 // connection to db
 
-mongoose.connect(process.env.MONGODB)
+mongoose.connect(process.env.MONGODB_CLOUD)
     .then(db => console.log('db connected'))
     .catch(err => console.log(err));
 
